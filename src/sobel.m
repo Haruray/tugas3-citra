@@ -1,11 +1,11 @@
-peach = imread('C:\Users\User\Downloads\peach.jpg');
+peach = imread('../data/1.png');
 Sx = [-1 0 1;-2 0 2;-1 0 1];
 Sy = [1 2 1;0 0 0;-1 -2 -1];
 data = peach;
 figure, imshow(data);
-sobel(data, Sx, Sy);
+sobelOperator(data, Sx, Sy);
 
-function result = sobel(img, Sx, Sy)
+function result = sobelOperator(img, Sx, Sy)
     img = rgb2gray(img);
     Jx = convn(double(img), double(Sx), 'same');
     Jy = convn(double(img), double(Sy), 'same');
