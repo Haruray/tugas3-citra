@@ -1,7 +1,6 @@
 function result = objectSegment(originalImg, edgedImg, k)
 
     [height, width, channels] = size(originalImg);
-    result = zeros(height, width, channels);
     closed_img = morphologicalClose(edgedImg, k);
     fill_img = imfill(closed_img, "holes");
 

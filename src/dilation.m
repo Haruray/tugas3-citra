@@ -1,4 +1,5 @@
 function result = dilation(img, k)
+    % source : geeksforgeeks
     [height, width, ~] = size(img);
     result = zeros(height,width);
 

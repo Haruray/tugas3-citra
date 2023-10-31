@@ -1,4 +1,5 @@
 function result = erosion(img, k)
+    % source : geeksforgeeks
     [height, width, ~] = size(img);
 
     % create structuring element             
