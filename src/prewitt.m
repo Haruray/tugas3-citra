@@ -10,5 +10,4 @@ function result = prewitt(img)
     Jx = convn(double(img), double(Rx), 'same');
     Jy = convn(double(img), double(Ry), 'same');
     result = uint8(sqrt(Jx.^2 + Jy.^2));
-    %figure, imshow(result);
 end

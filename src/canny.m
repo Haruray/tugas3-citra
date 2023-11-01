@@ -6,5 +6,4 @@
 function result = canny(img)
     img = rgb2gray(img);
     result = edge(img,"canny");
-    %figure, imshow(result);
 end
